@@ -10,6 +10,8 @@ packages = [{include = "test_jupyter_extensions"}]
 [tool.poetry.dependencies]
 python = ">=3.11,<3.12"
 pandas = "<2.0.0"
+jupyterlab-git = "^0.41.0"
+jupyter-ai = "^0.5.0"
 
 [tool.poetry.group.dev.dependencies]
 jupyterlab = "^3.6.3"
