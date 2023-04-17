@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "test-jupyter-extensions"
+version = "0.1.0"
+description = "I wanna know if I can use Jupyter Lab as my development IDE"
+authors = ["Sebástian Narváez-Salcedo <sanarvaezstatgis@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "test_jupyter_extensions"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+pandas = "<2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^3.6.3"
+statsmodels = "^0.13.5"
+earthengine-api = "^0.1.349"
+statgis = "^1.0.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
